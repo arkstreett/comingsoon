@@ -6,7 +6,7 @@ import Gear from '../images/gear.png'
 const Logo = ({ alt, src, spinSpeed }) =>  {
     return (
         <div className={`logo-container ${spinSpeed}`}>
-            <img className="logo" alt="Spinning Gear" src={ Gear }/>
+            <img id="logo-overide" className="logo" alt="Spinning Gear" src={ Gear }/>
         </div>
     )
 }

@@ -18,3 +18,16 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+#logo-overide {
+  animation: new-logo-spin infinite 9s linear;
+}
+
+@keyframes new-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

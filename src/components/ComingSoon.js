@@ -16,7 +16,7 @@ class ComingSoon extends Component {
 
   state = {
     countdown: {
-      futureDate: "2020-09-07 00:00:00"
+      futureDate: "2021-05-30 00:00:00"
     },
     logo: {
       alt: "Spinning Gear",
@@ -60,20 +60,17 @@ class ComingSoon extends Component {
     if (level === "success") {
       notification.src = check;
       notification.alt = "Check Mark";
-      notification.message = `Welcome to the Rodeo! YEEE-HAW.
-       Email coming your way buster!!`
+      notification.message = `Welcome, you will recieve all store notifications!!!`
 
     } else if (level === "warning") {
       notification.src = exclamation;
       notification.alt = "Exclamation Point";
-      notification.message = `You already joined sonny.
-       Re-check that email of yours.`
+      notification.message = `I believe this account is already subscribed, try another email.`
 
     } else {
       notification.src = xmark;
       notification.alt = "X Mark";
-      notification.message = `There was an issue tryna get ya in our possey young Buck
-       Try again!`
+      notification.message = `Your email wasn't valid or it does not exist`
     }
     this.setState({ notification });
   }

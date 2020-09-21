@@ -16,7 +16,7 @@ class Subscribe extends Component {
         e.preventDefault();
 
         if (this.state.email) {
-            fetch(`/api/addmember?email=${this.state.email}`)
+            fetch(`https://coming-soon-backend.herokuapp.com/api/newmember?email=${this.state.email}`)
             // .then(res => res.json())
             // .then(res => console.log(res))
             // .catch(err => console.log(err))
